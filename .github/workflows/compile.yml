@@ -20,13 +20,13 @@ jobs:
         export version=8.0.0
         alias wget='wget --content-disposition -nc'
         wget https://github.com/haiwen/libsearpc/archive/v3.2-latest.tar.gz
-        wget https://github.com/haiwen/ccnet/archive/v${version}.tar.gz 
+        wget https://github.com/haiwen/ccnet-server/archive/v7.0.0-server.tar.gz 
         wget https://github.com/haiwen/seafile/archive/v${version}.tar.gz
         wget https://github.com/haiwen/seafile-client/archive/v${version}.tar.gz
     - name: uncompress tar files
       run: |
         tar xf libsearpc-3.2-latest.tar.gz
-        tar xf ccnet-${version}.tar.gz
+        tar xf ccnet-server-7.0.0-server.tar.gz
         tar xf seafile-${version}.tar.gz
         tar xf seafile-client-${version}.tar.gz
     - name: export variables
