@@ -68,6 +68,7 @@ jobs:
     - name: Build selfie client
       run: |
         export PREFIX=/usr
+        export version=8.0.0
         export PKG_CONFIG_PATH="$PREFIX/lib/pkgconfig:$PKG_CONFIG_PATH"
         export PATH="$PREFIX/bin:$PATH"
         cd seafile-client-${version}
