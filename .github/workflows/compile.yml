@@ -36,7 +36,7 @@ jobs:
     #     export PATH="$PREFIX/bin:$PATH"
     - name: Build from source
       run: |
-        cd libsearpc-3.2-latest
+        # cd libsearpc-3.2-latest
         ./autogen.sh
         ./configure --prefix=/usr
         make
