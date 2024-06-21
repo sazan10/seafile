@@ -25,6 +25,7 @@ jobs:
         wget https://github.com/haiwen/seafile-client/archive/v${version}.tar.gz
     - name: uncompress tar files
       run: |
+        export version=8.0.0
         tar xf libsearpc-3.2-latest.tar.gz
         tar xf ccnet-server-7.0.0-server.tar.gz
         tar xf seafile-${version}.tar.gz
